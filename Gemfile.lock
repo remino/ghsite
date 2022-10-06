@@ -18,6 +18,7 @@ GEM
     concurrent-ruby (1.1.10)
     dnsruby (1.61.9)
       simpleidn (~> 0.1)
+    dry-cli (0.7.0)
     em-websocket (0.5.3)
       eventmachine (>= 0.12.9)
       http_parser.rb (~> 0)
@@ -197,6 +198,10 @@ GEM
       jekyll-seo-tag (~> 2.0)
     jekyll-titles-from-headings (0.5.3)
       jekyll (>= 3.3, < 5.0)
+    jekyll-vite (3.0.4)
+      jekyll (>= 3, < 5)
+      rackup (~> 0.2)
+      vite_ruby (~> 3.2)
     jekyll-watch (2.2.1)
       listen (~> 3.0)
     jemoji (0.12.0)
@@ -231,6 +236,12 @@ GEM
     prettier_print (0.1.0)
     public_suffix (4.0.7)
     racc (1.6.0)
+    rack (3.0.0)
+    rack-proxy (0.7.4)
+      rack
+    rackup (0.2.2)
+      rack (>= 3.0.0.beta1)
+      webrick
     rb-fsevent (0.11.2)
     rb-inotify (0.10.1)
       ffi (~> 1.0)
@@ -274,6 +285,10 @@ GEM
       unf_ext
     unf_ext (0.0.8.2)
     unicode-display_width (1.8.0)
+    vite_ruby (3.2.4)
+      dry-cli (~> 0.7.0)
+      rack-proxy (~> 0.6, >= 0.6.1)
+      zeitwerk (~> 2.2)
     webrick (1.7.0)
     zeitwerk (2.6.1)
 
@@ -284,6 +299,7 @@ DEPENDENCIES
   faraday-retry (~> 2.0)
   github-pages
   http_parser.rb (~> 0.6.0)
+  jekyll-vite
   prettier
   tzinfo (~> 1.2)
   tzinfo-data

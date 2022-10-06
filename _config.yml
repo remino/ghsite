@@ -12,7 +12,15 @@ defaults:
     values:
       layout: default
 
+plugins:
+  - jekyll/vite
+
 exclude:
+  - bin
+  - config
+  - vite.config.ts
+  - tmp
+  - Procfile.dev
   - README.md
   - LICENSE.txt
   - jeksite
